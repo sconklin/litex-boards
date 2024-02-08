@@ -101,12 +101,13 @@ _connectors = [
     )
 ]
 
+# -spc- reversed tx and rx towork with the UART card I have
 def pmod_uart(port="P2"):
     if port == "P2":
         return [
         ("serial", 0,
-            Subsignal("tx", Pins("dimm:41")),
-            Subsignal("rx", Pins("dimm:51")),
+            Subsignal("tx", Pins("dimm:51")),
+            Subsignal("rx", Pins("dimm:41")),
             IOStandard("LVCMOS33"))
         ]
     else:
