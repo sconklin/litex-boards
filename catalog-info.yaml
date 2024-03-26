@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: litex-boards
+  description: A component to manage the Litex boards
+spec:
+  type: service
+  lifecycle: production
+  owner: tracking-team
